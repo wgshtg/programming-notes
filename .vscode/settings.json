@@ -1,0 +1,40 @@
+{
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "all",
+    "editor.wrappingIndent": "indent",
+    "editor.overviewRulerBorder": false,
+    "editor.lineHeight": 24,
+    "[markdown]": {
+        "editor.quickSuggestions": {
+            "comments": "on",
+            "strings": "on",
+            "other": "on"
+        },
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.markdownlint": true
+    },
+    "files.defaultLanguage": "markdown",
+    "files.exclude": {
+        "**/node_modules": true,
+        "**/.sync_*": true
+    },
+    "files.watcherExclude": {
+        "**/.foam": true,
+        "**/z-Diary": true,
+        "**/.sync_*": true
+    },
+    "foam.edit.linkReferenceDefinitions": "off",
+    "foam.openDailyNote.directory": "z-Diary",
+    "foam.openDailyNote.filenameFormat": "yyyy-mm-dd",
+    "foam.openDailyNote.fileExtension": "md",
+    "git.enableSmartCommit": true,
+    "git.postCommitCommand": "sync",
+    "markdown.preview.breaks": true,
+    "pasteImage.path": "${projectRoot}/Media/Images",
+    "pasteImage.showFilePathConfirmInputBox": true,
+    "prettier.singleQuote": false,
+    "pangu.auto_format_on_save": true,
+}
