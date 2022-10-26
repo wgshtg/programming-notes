@@ -1,13 +1,5 @@
 # find 指令說明與常見用法
 
-## 說明
-
-```sh
-# 列出當前目錄下所有檔案與目錄
-# Type f: file, type d: directory
-find . -type [f|d] -name '*'
-```
-
 ## 找出最近一個禮拜修改的檔案
 
 ```sh
