@@ -36,5 +36,6 @@
     "pasteImage.path": "${projectRoot}/Media/Images",
     "pasteImage.showFilePathConfirmInputBox": true,
     "prettier.singleQuote": false,
-    "pangu.auto_format_on_save": true,
+    "autocorrect.enable": true,
+    "autocorrect.formatOnSave": true
 }
