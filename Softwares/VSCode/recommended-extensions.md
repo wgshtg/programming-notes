@@ -8,6 +8,15 @@ code --install-extension wix.vscode-import-cost
 
 # 增強 Git 整合
 code --install-extension eamodio.gitlens
+
+# PHP intelligence
+code --install-extension bmewburn.vscode-intelephense-client
+
+# 高亮結尾空格和多餘空白列，並自動刪除
+code --install-extension shardulm94.trailing-spaces
+
+# 在定義套件版本的設定檔中，顯示套件最新版本
+code --install-extension pflannery.vscode-versionlens
 ```
 
 ## 文書編輯
@@ -18,4 +27,13 @@ code --install-extension huacnlee.auto-correct
 
 # 做筆記工具
 code --install-extension foam.foam-vscode
+
+# 增強 Markdown 編寫體驗
+code --install-extension yzhang.markdown-all-in-one
+
+# Markdown lint 和樣式檢查
+code --install-extension DavidAnson.vscode-markdownlint
+
+# 從剪貼簿貼上圖片，在內容插入圖片路徑參考
+code --install-extension mushan.vscode-paste-image
 ```
