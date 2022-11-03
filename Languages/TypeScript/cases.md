@@ -24,3 +24,10 @@ func({param1: '123'});
 const func = ({param1, param2}:Prop = {}) => {}
 func();
 ```
+
+## 替換字串中所有空白
+
+```ts
+const text = ' A BCD ';
+text.replaceAll(/\s/g, '');
+```
