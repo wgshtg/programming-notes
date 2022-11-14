@@ -31,3 +31,19 @@ func();
 const text = ' A BCD ';
 text.replaceAll(/\s/g, '');
 ```
+
+## 指定變數為 Switch 回傳值
+
+技巧為 `Immediately-invoked lambda/function`
+
+```ts
+// 用括弧把函式包起來，在用括弧表示函式呼叫
+// (() => {})()
+// const a = () => {}; a(); // 效果一樣
+const number = (() => {switch (1) {
+    case 1: return '1';
+    case 2: return '2';
+    case 3: return '3';
+    default: return '0';
+}})();
+```
