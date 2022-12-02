@@ -22,4 +22,26 @@
 
 [官方文件連結][1]
 
+## Configure global gitignore
+
+從 `Git` 中排除常見在作業系統、`IDE` 或框架會產生或使用的檔案
+
+```sh
+# macOS
+git config --global core.excludesfile ~/.gitignore
+
+# Windows
+git config --global core.excludesfile "%USERPROFILE%\.gitignore"
+```
+
+```.gitignore
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# etc...
+```
+
 [1]:https://git-scm.com/docs/git-config#_conditional_includes
