@@ -69,3 +69,19 @@ grep "/cas/login" access.log | cut -d[ -f2 | cut -d] -f1 | awk -F: '{print $2":"
     1 10:50
     2 11:59
 ```
+
+## 計算特定 IP 每分鐘有多少請求
+
+```sh
+grep "192.168.48.12" access.log | cut -d[ -f2 | cut -d] -f1 | awk -F: '{print $2":"$3}' | sort -nk1 -nk2 | uniq -c
+```
+
+```stdout
+    4 10:26
+    6 10:27
+   12 10:29
+    3 10:30
+    3 10:31
+   11 10:34
+    1 11:05
+```
