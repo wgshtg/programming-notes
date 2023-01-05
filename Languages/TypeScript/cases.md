@@ -4,7 +4,7 @@
 
 [參考資料](https://bobbyhadz.com/blog/typescript-function-optional-parameters)
 
-```ts
+```typescript
 // 一般情況
 const func = (param1?: string, param2?: string) => {}
 // 錯誤
@@ -36,7 +36,7 @@ text.replaceAll(/\s/g, '');
 
 技巧為 `Immediately-invoked lambda/function`
 
-```ts
+```typescript
 // 用括弧把函式包起來，在用括弧表示函式呼叫
 // (() => {})()
 // const a = () => {}; a(); // 效果一樣
@@ -46,4 +46,21 @@ const number = (() => {switch (1) {
     case 3: return '3';
     default: return '0';
 }})();
+```
+
+## 從字串、數字轉成列舉，列舉 key 轉成字串
+
+```typescript
+enum Tag {
+  A,
+  B,
+  C
+}
+
+const tag1 = 'A';
+// 把 Tag 轉成型別，再把型別上 key 抓出來，字串再轉型比對 key
+Tag[tag1 as keyof typeof Tag] === Tag.A; // true
+const tag2 = 0;
+Tag[tag2] === Tag.A; // true
+Tag[Tag.A] === 'A' // true
 ```
