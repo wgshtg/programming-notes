@@ -1,12 +1,12 @@
 {
-  // See http://go.microsoft.com/fwlink/?LinkId=827846
-  // for the documentation about the extensions.json format
-  "recommendations": [
-    "foam.foam-vscode",
-    "yzhang.markdown-all-in-one",
-    "mushan.vscode-paste-image",
-    "davidanson.vscode-markdownlint",
-    "huacnlee.autocorrect",
-    "streetsidesoftware.code-spell-checker"
-  ]
+    // See http://go.microsoft.com/fwlink/?LinkId=827846
+    // for the documentation about the extensions.json format
+    "recommendations": [
+        "foam.foam-vscode",
+        "yzhang.markdown-all-in-one",
+        "mushan.vscode-paste-image",
+        "davidanson.vscode-markdownlint",
+        "huacnlee.autocorrect",
+        "shd101wyy.markdown-preview-enhanced"
+    ]
 }
