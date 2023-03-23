@@ -6,9 +6,6 @@
 # 計算 JavaScript 和 TypeScript 的 imports 和 requires 套件大小
 code --install-extension wix.vscode-import-cost
 
-# 增強 Git 整合
-code --install-extension eamodio.gitlens
-
 # PHP intelligence
 code --install-extension bmewburn.vscode-intelephense-client
 
