@@ -5,17 +5,17 @@
 ## 上傳檔案至伺服器
 
 ```sh
-scp SourceFile user@host:directory/TargetFile
+scp source-file user@host:directory/target-file
 ```
 
 ## 從伺服器下載檔案
 
 ```sh
-scp user@host:directory/SourceFile TargetFile
+scp user@host:directory/source-file target-file
 ```
 
 ## 使用指定 port 和私鑰
 
 ```sh
-scp -P 2222 -i private-key SourceFile user@host:directory/TargetFile
+scp -P 2222 -i private-key source-file user@host:directory/target-file
 ```
