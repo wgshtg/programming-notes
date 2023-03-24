@@ -1,28 +1,32 @@
 {
-    "editor.minimap.enabled": false,
-    "editor.renderWhitespace": "all",
-    "editor.wrappingIndent": "indent",
-    "editor.overviewRulerBorder": false,
-    "editor.lineHeight": 24,
     "[markdown]": {
+        "editor.formatOnPaste": true,
+        "editor.formatOnSave": true,
         "editor.quickSuggestions": {
             "comments": "on",
-            "strings": "on",
-            "other": "on"
-        },
-        "editor.formatOnSave": true,
-        "editor.formatOnPaste": true,
+            "other": "on",
+            "strings": "on"
+        }
     },
+    "autocorrect.enable": true,
+    "autocorrect.formatOnSave": true,
     "editor.codeActionsOnSave": {
         "source.fixAll.markdownlint": true
     },
+    "editor.lineHeight": 24,
+    "editor.minimap.enabled": false,
+    "editor.overviewRulerBorder": false,
+    "editor.renderWhitespace": "all",
+    "editor.wrappingIndent": "indent",
     "files.defaultLanguage": "markdown",
     "foam.edit.linkReferenceDefinitions": "off",
     "git.enableSmartCommit": true,
     "git.postCommitCommand": "sync",
+    "markdown.extension.list.toggle.candidate-markers": [
+        "-",
+        "1."
+    ],
     "markdown.preview.breaks": true,
     "pasteImage.path": "${projectRoot}/Media/Images",
-    "pasteImage.showFilePathConfirmInputBox": true,
-    "autocorrect.enable": true,
-    "autocorrect.formatOnSave": true
+    "pasteImage.showFilePathConfirmInputBox": true
 }
