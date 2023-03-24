@@ -32,3 +32,20 @@ ${separator}: a conditional separator (" - ") that only shows when surrounded by
 <!-- 空白列 -->
 ^$\n
 ```
+
+## Markdown 快捷指令
+
+需要先安裝 `yzhang.markdown-all-in-one` 套件
+
+- 提高標題層級：⇧⌃[
+- 降低標題層級：⇧⌃]
+- 添加列表項目符號和更新列表項目符號：⇧⌘P (show all commands)，執行 `Markdown All in One: Toggle list`
+
+> 設定可使用的項目符號
+
+```json
+"markdown.extension.list.toggle.candidate-markers": [
+    "-",
+    "1."
+],
+```
