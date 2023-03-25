@@ -26,3 +26,9 @@ rsync -avzh /tmp/123.txt {user}@{ip or host}:/tmp/
 ```sh
 rsync -avzh {user}@{ip or host}:/tmp/123.txt /tmp/
 ```
+
+## 指定 ssh port
+
+```sh
+rsync -avzh -e 'ssh -p 2222' /tmp/123.txt {user}@{ip or host}:/tmp/
+```
