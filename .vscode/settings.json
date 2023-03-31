@@ -28,5 +28,8 @@
     ],
     "markdown.preview.breaks": true,
     "pasteImage.path": "${projectRoot}/Media/Images",
-    "pasteImage.showFilePathConfirmInputBox": true
+    "pasteImage.showFilePathConfirmInputBox": true,
+    "markdownlint.config": {
+        "MD004": false,
+      }
 }
