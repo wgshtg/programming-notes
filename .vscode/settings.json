@@ -31,5 +31,6 @@
     "pasteImage.showFilePathConfirmInputBox": true,
     "markdownlint.config": {
         "MD004": false,
+        "MD018": false
       }
 }
