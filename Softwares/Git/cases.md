@@ -66,4 +66,11 @@ fi
 ' --tag-name-filter cat -- --branches --tags
 ```
 
+## Commit message writing
+
+### Bugfix 寫法
+
+- Bug fix(es): 修復單一或多個 Bug
+- bugfix: 表示 patch 或 change，在修正錯誤上
+
 [1]:https://git-scm.com/docs/git-config#_conditional_includes
