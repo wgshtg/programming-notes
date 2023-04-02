@@ -1,6 +1,12 @@
+<!-- omit in toc -->
 # React Element Types
 
 `ReactElement`，`JSX.Element` 和 `ReactChild` 是相似的都是 `React` 最小單元 `Element`，`ReactNode` 則是包含前面型別，可表示 `Component`，算是更高層級。
+
+- [ReactElement](#reactelement)
+- [JSX.Element](#jsxelement)
+- [ReactChild](#reactchild)
+- [ReactNode](#reactnode)
 
 ## ReactElement
 
