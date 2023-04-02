@@ -1,10 +1,10 @@
-# TypeScript 解決問題集
+# TypeScript 常見配置與使用情境
 
 ## 當 function parameter 都是 optional，呼叫 function 時指定特定參數
 
 [參考資料](https://bobbyhadz.com/blog/typescript-function-optional-parameters)
 
-```typescript
+```ts
 // 一般情況
 const func = (param1?: string, param2?: string) => {}
 // 錯誤
@@ -36,7 +36,7 @@ text.replaceAll(/\s/g, '');
 
 技巧為 `Immediately-invoked lambda/function`
 
-```typescript
+```ts
 // 用括弧把函式包起來，在用括弧表示函式呼叫
 // (() => {})()
 // const a = () => {}; a(); // 效果一樣
@@ -50,7 +50,7 @@ const number = (() => {switch (1) {
 
 ## 從字串、數字轉成列舉，列舉 key 轉成字串
 
-```typescript
+```ts
 enum Tag {
   A,
   B,

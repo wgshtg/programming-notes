@@ -1,4 +1,4 @@
-# JavaScript 解決問題集
+# JavaScript 常見配置與使用情境
 
 ## 基本分頁功能
 

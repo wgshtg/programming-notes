@@ -1,4 +1,4 @@
-# PHP 解決問題集
+# PHP 常見配置與使用情境
 
 ## Coding Standard
 
