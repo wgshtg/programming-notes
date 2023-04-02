@@ -17,5 +17,10 @@
 | Function app | func |
 | MySQL database | mysql |
 
+## Resource Icons
+
+[Azure Icons][3]
+
 [1]: https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming
 [2]: https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations
+[3]:http://code.benco.io/icon-collection/azure-icons/
