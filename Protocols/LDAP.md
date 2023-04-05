@@ -79,3 +79,28 @@ ldapmodify -x -h {host} -D "{username}" -w {password} -f {modify.ldif}
     ldapmodify -x -h localhost -D "cn=admin,dc=example,dc=org" -w admin -f {modify.ldif}
     ```
 
+## 新增/刪除 DN
+
+1. 準備包含異動內容的檔案 modify.ldif
+
+    ```txt
+    # 新增 DN
+    dn: uid=aaaa54d5-0419-aaaa-abaa-9600d14cb17d,ou=users,dc=example,dc=org
+    changetype: add
+    objectClass: inetOrgPerson
+    objectClass: extensibleObject
+    cn: John Doe
+    sn: Doe
+    mail: john.doe@example.com
+
+    # 刪除 DN
+    dn: uid=bbbb54d5-0419-bbbb-abaa-9600d14cb17d,ou=users,dc=example,dc=org
+    changetype: delete
+    ```
+
+2. 使用 `ldapmodify` 指令來寫入異動
+
+    ```sh
+    ldapmodify -x -h localhost -D "cn=admin,dc=example,dc=org" -w admin -f {modify.ldif}
+    ```
+
