@@ -104,3 +104,20 @@ ldapmodify -x -h {host} -D "{username}" -w {password} -f {modify.ldif}
     ldapmodify -x -h localhost -D "cn=admin,dc=example,dc=org" -w admin -f {modify.ldif}
     ```
 
+## LDAP 查詢的條件表達式
+
+(equals)： "="
+(greater than or equal to)： ">="
+(less than or equal to)： "<="
+(approximate match)： "~="
+(present)： "="，表示屬性存在
+(substring match)： "=" 或 "="，表示屬性包含指定的子字符串
+
+```txt
+# 查詢所有名稱為 "John Doe" 的使用者
+(&(objectClass=person)(cn=John Doe))
+# 查詢所有電子郵件地址以 "example.com" 結尾的使用者
+(&(objectClass=person)(mail=*@example.com))
+# 查詢 uid 為任一值，carLicense 為任一值的 DN
+"(&(uid=*)(carLicense=*))"
+```
