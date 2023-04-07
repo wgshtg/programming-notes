@@ -16,3 +16,40 @@
 | 1     | Standard Output | stdout               |
 | 2     | Standard Error  | stderr               |
 
+## 重新導向使用方法
+
+將各種標準流 (`standard streams`) 重新導向到指定位置
+
+```sh
+# 將 date stdout 輸出到 log.txt
+# log.txt 內容會被完全取代
+# log.txt content
+# 123
+date > log.txt
+# log.txt content
+# 2023年 4月 7日 週五 15時53分17秒 CST
+
+# 將 date stdout 輸出到 log.txt，插入至檔案內容末尾
+date >> log.txt
+# log.txt content
+# 123
+# 2023年 4月 7日 週五 15時53分17秒 CST
+
+# 將 log.txt 內容作為 stdin，讓 grep 搜尋特定字串
+grep 1 < log.txt
+# output
+# 123
+grep a < log.txt
+# output (empty)
+
+# 使用 << 建立文本區塊 (here document) 的輸入，使用 EOF 標記文本區塊的結束
+# EOF 可以用其他任意不包含空格和 tab 字元的字串代替
+grep a << EOF
+
+# output
+# heredoc> a
+# heredoc> b
+# heredoc> EOF
+# a
+```
+
