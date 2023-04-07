@@ -64,3 +64,24 @@ cat log.txt | grep a
 # aaa
 ```
 
+## 標準錯誤重新導向
+
+```sh
+# 2 是指標準錯誤，重新導向 log.txt
+date2 2> log.txt
+# output (empty)
+# log.txt content
+# zsh: command not found: date2
+
+# 將標準錯誤重新導向到標準輸出
+date2 2>&1 log.txt
+# output
+# zsh: command not found: date2
+# log.txt content(empty)
+
+# 將標準錯誤重新導向到標準輸出，標準輸出導向到 log.txt
+date2 > log.txt 2>&1
+# output (empty)
+# log.txt content
+# zsh: command not found: date2
+```
