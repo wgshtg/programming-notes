@@ -53,3 +53,14 @@ grep a << EOF
 # a
 ```
 
+### 管道 (Piping)
+
+```sh
+# 將 cat 標準輸出傳遞給 grep 搜尋符合特定字串 a
+# log.txt content
+# aaa
+cat log.txt | grep a
+# output
+# aaa
+```
+
