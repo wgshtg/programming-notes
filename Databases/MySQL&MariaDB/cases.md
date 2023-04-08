@@ -50,3 +50,22 @@ ORDER BY
 */
 ```
 
+## 權限設定
+
+權限異動後需要執行 `flush privileges` 來更新權限。
+
+```sql
+-- 顯示當前使用者權限
+show grants;
+-- 顯示特定使用者和 host 的權限
+show grants for '{user}'@'{host}';
+-- 賦予特定資料庫的特定資料表的權限給使用者
+grant select, insert, delete, update, create, drop on '{db-name}'.'{table-name}' to '{user}' @'{host}'
+-- 賦予特定資料庫的所有資料表的特定權限給使用者
+grant select, insert on '{db-name}'.* to '{user}' @'{host}'
+-- 賦予所有資料庫的所有資料表的所有權限給使用者
+grant all privileges on *.* to '{user}' @'{host}'
+-- 拔除權限，語法和 grant 相同
+revoke all privileges on *.* to '{user}' @'{host}'
+```
+
