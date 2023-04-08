@@ -69,3 +69,15 @@ grant all privileges on *.* to '{user}' @'{host}'
 revoke all privileges on *.* to '{user}' @'{host}'
 ```
 
+## 使用者管理
+
+```sql
+-- 建立使用者，並指定密碼
+create user '{user}'@'{host}' identified by '{password}';
+-- 刪除使用者
+drop user '{user}'@'{host}';
+-- 修改使用者密碼
+set password for '{user}'@'{host}' = password('{password}');
+-- 更新使用者名稱
+rename user '{old-user}'@'{old-host}' to '{new-user}'@'{new-host}';
+```
