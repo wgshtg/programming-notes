@@ -1,3 +1,7 @@
+---
+foam_template:
+  filepath: 'Commands/$FOAM_TITLE.md'
+---
 # $FOAM_TITLE 指令說明與常見用法
 
 `$FOAM_TITLE`:
