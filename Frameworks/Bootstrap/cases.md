@@ -6,3 +6,12 @@
 `{component}-{color}`: 元件 + 顏色
 `{component}-{breakpoint}`: 元件 + 斷點
 
+## 常用元件 (Component)
+
+|  Component  |    Class    |
+|:-----------:|:-----------:|
+|    Text     |   `text`    |
+|  Container  | `container` |
+|  Grid.Row   |    `row`    |
+| Grid.Column |    `col`    |
+
