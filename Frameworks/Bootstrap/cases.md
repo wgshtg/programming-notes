@@ -15,3 +15,20 @@
 |  Grid.Row   |    `row`    |
 | Grid.Column |    `col`    |
 
+## Theme colors
+
+|   Color   | Class infix  |
+|:---------:|:------------:|
+|  Primary  |  `-primary`  |
+| Secondary | `-secondary` |
+|  Success  |  `-success`  |
+|  Danger   |  `-danger`   |
+|  Warning  |  `-warning`  |
+|   Info    |   `-info`    |
+|   Light   |   `-light`   |
+|   Dark    |   `-dark`    |
+|   Muted   |   `-muted`   |
+|   White   |   `-white`   |
+| Black-50  | `-black-50`  |
+| White-50  | `-white-50`  |
+
