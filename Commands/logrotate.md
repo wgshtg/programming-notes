@@ -39,3 +39,8 @@
 }
 ```
 
+### 測試配置檔案可否正常執行
+
+```sh
+logrotate /etc/logrotate.conf --force
+```
