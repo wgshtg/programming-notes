@@ -109,3 +109,13 @@ traefik:
     - traefik.http.services.blog.loadbalancer.server.port={port}
 ```
 
+## 綁定多個網域
+
+```yml
+traefik:
+  image: traefik
+  labels:
+    - traefik.enable=true
+    - traefik.http.routers.blog.entrypoints=web
+    - traefik.http.routers.blog.rule=Host(`{domain}`, `{domain2}`)
+```
