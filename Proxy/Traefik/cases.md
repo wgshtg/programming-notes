@@ -77,3 +77,22 @@ traefik:
     - traefik.http.routers.blog-insecure.middlewares=force-secure
 ```
 
+## 限制存取規則
+
+限制特定 `IP` 可存取特定路由
+
+```yml
+traefik:
+  image: traefik
+  labels:
+    - traefik.enable=true
+    - traefik.http.routers.blog-admin.entrypoints=web
+    # 限制可存取路由
+    - traefik.http.routers.blog-admin.rule=Host(`{domain}`)
+    - traefik.http.routers.blog-admin.rule=(Host(`{domain}`) && PathPrefix(`/administrator/`))
+    # 限制可存取 IP
+    - traefik.http.middlewares.blog-admin-ipwhitelist.ipwhitelist.sourcerange=${ip-whitelist}
+    # 設定 blog-admin middleware 為 blog-admin-ipwhitelist
+    - traefik.http.routers.blog-admin.middlewares=blog-admin-ipwhitelist
+```
+
