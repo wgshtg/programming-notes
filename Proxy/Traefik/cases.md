@@ -96,3 +96,16 @@ traefik:
     - traefik.http.routers.blog-admin.middlewares=blog-admin-ipwhitelist
 ```
 
+## 當容器內預設監聽 port 不是 80, 443 時，指定特定 port 來對應存取
+
+```yml
+traefik:
+  image: traefik
+  labels:
+    - traefik.enable=true
+    - traefik.http.routers.blog.entrypoints=web
+    - traefik.http.routers.blog.rule=Host(`{domain}`)
+    # 指定容器內監聽 port
+    - traefik.http.services.blog.loadbalancer.server.port={port}
+```
+
