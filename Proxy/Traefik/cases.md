@@ -43,3 +43,37 @@ traefik:
 
 > Container restart policy 需要設為 `unless-stopped`
 
+## 配置 HTTP, HTTPS
+
+```yml
+traefik:
+  image: traefik
+  # 全域設定 HTTP 轉導向 HTTPS
+  command:
+  - --entrypoints.web.address=:80
+  - --entrypoints.websecure.address=:443
+  - --entrypoints.web.http.redirections.entryPoint.to=websecure
+  - --entrypoints.web.http.redirections.entryPoint.scheme=https
+  - --entrypoints.web.http.redirections.entrypoint.permanent=true
+  labels:
+    - traefik.enable=true
+    # HTTPS
+    - traefik.http.routers.blog.entrypoints=websecure
+    # 啟用 HTTPS TLS 憑證
+    - traefik.http.routers.blog.tls=true
+    - traefik.http.routers.blog.tls.certresolver={my-resolver}
+    # 設定 HTTPS 網域
+    - traefik.http.routers.blog.rule=Host(`{domain}`)
+    # HTTP
+    - traefik.http.routers.blog-insecure.entrypoints=web
+    # 設定 HTTP 網域
+    - traefik.http.routers.blog-insecure.rule=Host(`{domain}`)
+    # 個別設定 HTTP 轉導向 HTTPS
+    # 定義 force-secure middleware
+    - traefik.http.middlewares.force-secure.redirectscheme.scheme=https
+    # 暫時或永久重導向
+    - traefik.http.middlewares.force-secure.redirectscheme.permanent=true
+    # 設定 blog-insecure router middleware 為 force-secure
+    - traefik.http.routers.blog-insecure.middlewares=force-secure
+```
+
