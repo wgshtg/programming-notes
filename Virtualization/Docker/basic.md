@@ -8,7 +8,7 @@
 
 ![Docker architecture](../../Media/Images/2023-04-14-10-03-03.png)
 
-`Registy`: 映像檔的託管平台 (`Registry`)
+`Registy`: 儲存並下載映像檔的託管平台
 
 資源：
     `Image`: 映像檔，啟動容器的範本
@@ -49,6 +49,8 @@
 
 - [moby/moby](https://github.com/moby/moby)
 - [10 個 Q&A 快速認識 Docker | iThome](https://www.ithome.com.tw/news/91847)
+- [cgroups](https://en.wikipedia.org/wiki/Cgroups)
+- [Linux namespaces](https://en.wikipedia.org/wiki/Linux_namespaces)
 
 ## 參考資源
 
