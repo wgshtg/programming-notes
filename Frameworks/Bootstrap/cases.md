@@ -42,3 +42,18 @@
 |       Large       |    `lg`     |   ≥992px   |
 |    Extra large    |    `xl`     |  ≥1200px   |
 | Extra extra large |    `xxl`    |  ≥1400px   |
+
+## Sides
+
+適用於 `margin`, `padding`
+
+| Sides | Defintion                   | Usage                                          |
+|:-----:|:----------------------------|:-----------------------------------------------|
+|   t   | top                         | `mt-3: margin-top: 1rem;`                      |
+|   b   | bottom                      | `mb-3: margin-bottom: 1rem;`                   |
+|   s   | left                        | `ms-3: margin-left: 1rem;`                     |
+|   e   | right                       | `me-3: margin-right: 1rem;`                    |
+|   x   | left & right                | `mx-3: margin-left: 1rem; margin-right: 1rem;` |
+|   y   | top & bottom                | `my-3: margin-top: 1rem; margin-bottom: 1rem;` |
+| blank | top & bottom & left & right | `m-3: margin: 1 rem;`                          |
+
