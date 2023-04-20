@@ -57,3 +57,18 @@
 |   y   | top & bottom                | `my-3: margin-top: 1rem; margin-bottom: 1rem;` |
 | blank | top & bottom & left & right | `m-3: margin: 1 rem;`                          |
 
+## Sizes
+
+適用於 `margin`, `padding`
+
+`$spacer` 預設值為 `1rem`
+
+| Size | Defintion       |
+|:----:|:----------------|
+|  0   | `0`             |
+|  1   | `$spacer *.25`  |
+|  2   | `$spacer *.5`   |
+|  3   | `$spacer`       |
+|  4   | `$spacer *.1.5` |
+|  5   | `$spacer *.3`   |
+| auto | `auto`          |
