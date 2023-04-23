@@ -1,6 +1,6 @@
 # sudo 指令說明與常見用法
 
-全名是 `superuser do`，獲取(管理者)權限，執行特定命令
+全名是 `superuser do`，獲取 (管理者) 權限，執行特定命令
 
 ## 對沒有權限的檔案，使用重定向來更新內容，顯示 `Permission Denied`
 
