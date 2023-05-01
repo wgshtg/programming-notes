@@ -45,7 +45,9 @@
 
 ## Sides
 
-適用於 `margin`, `padding`
+> 適用於 `margin`, `padding`
+
+在 `Bootstrap 5` 當中將原本使用非方向性名稱表示，改用邏輯屬性名稱表示，同時支援 `RTL` (`Right-to-Left`)。原本使用的 `right`, `left` 改用 `start`, `end` 表示。
 
 | Sides | Defintion                   | Usage                                          |
 |:-----:|:----------------------------|:-----------------------------------------------|
